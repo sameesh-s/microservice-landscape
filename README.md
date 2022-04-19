@@ -8,4 +8,5 @@ Installation
 Starting  
 --------  
 To generate spring boot projects from scratch use the create-projects.bash  
-
+For each project we can list the created files.  
+'''find microservices/product-service -type f'''
