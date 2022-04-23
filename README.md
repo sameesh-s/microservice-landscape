@@ -9,4 +9,11 @@ Starting
 --------  
 To generate spring boot projects from scratch use the create-projects.bash  
 For each project we can list the created files.  
-'''find microservices/product-service -type f'''
+```  
+find microservices/product-service -type f   
+```
+
+to build the gradle projects use the below commands  
+```
+cd microservices/product-service; ./gradlew build; cd -; \
+....
