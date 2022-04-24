@@ -19,7 +19,7 @@ cd microservices/product-service; ./gradlew build; cd -; \
 ....  
 ```  
 
-To create multi module gradle project: single build command in root project   
+Gradle multi-project setup : not prefered for devops pipeline, for dev only  
 1. create setting.gradle in root directroy  
 ```
 include ':microservices:product-service'
