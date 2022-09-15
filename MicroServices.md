@@ -10,7 +10,7 @@
 * Circuit breaker  
 * Control loop  
 * Centralized monitoring and alarms  
-  * Detecting new microservice instances and collecting log events from them.  
-  * interpreting and storing log events in a structured and searchable way in a central database.  
-  * Providing APIs and graphical tools for querying and analyzing log events.  
+..* Detecting new microservice instances and collecting log events from them.  
+..* interpreting and storing log events in a structured and searchable way in a central database.  
+..* Providing APIs and graphical tools for querying and analyzing log events.  
 
