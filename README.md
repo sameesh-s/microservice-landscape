@@ -63,4 +63,16 @@ State transition of Cicuit breaker
 6. After a configurable period of time, the circuit breaker will enter a Half Open state and allow one request to go throug, as a probe, to see whether the failure has been resolved.  
 7. If the probe request fails, the circuit breaker goes back to the Open state. 
 8. If the probe request succeeds, the circuit breaker goes to the initial Closed state, allowing new requests to be processed.  
- 
+for monitoring circuit breaker we can use the acutator health end point. 
+```
+curl $HOST:$PORT/actuator/health -s | jq .components.circuitBreakers  
+```
+
+
+Using Spring Cloud Sleuth and Zipkin for distributed tracing  
+------------------------------------------------------------  
+To understand what is going on in a distributed system such as a system landsscape of cooperating microservices, it is crucial to be able to track and visualize how requests and messages flow between mciroservices when processing an external call to the sytem landscape.  
+Spring Cloud comes with Spring Cloud Sleuth, which can mark requests and messages/events that are part of the same processing flow with a common correleation ID.  
+Zipking is a distributed tracing system that Spring Cloud Sleuth can send tracing data to for storage and visualization.  
+The infrastructure for handling distributed tracing information in Spring Cloud Sleuth and Zipking is based on Google Dapper.(Trace tree, spans, Traceid, SpandId)
+   
