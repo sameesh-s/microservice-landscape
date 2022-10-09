@@ -77,5 +77,6 @@ Zipking is a distributed tracing system that Spring Cloud Sleuth can send tracin
 The infrastructure for handling distributed tracing information in Spring Cloud Sleuth and Zipking is based on Google Dapper.(Trace tree, spans, Traceid, SpandId)
 
 |:-Design Pattern -:|:- Spring Boot -:|:- Spring Cloud -:|:- Kubernetes -:|:- Istio -:|
+|-------------------|-----------------|------------------|----------------|-----------|
 |:-Service discovery ||:-Netflix Eureka and Spring Cloud LoadBalancer|:-Kubernetes kube-proxy and service resources||
    
