@@ -75,4 +75,7 @@ To understand what is going on in a distributed system such as a system landssca
 Spring Cloud comes with Spring Cloud Sleuth, which can mark requests and messages/events that are part of the same processing flow with a common correleation ID.  
 Zipking is a distributed tracing system that Spring Cloud Sleuth can send tracing data to for storage and visualization.  
 The infrastructure for handling distributed tracing information in Spring Cloud Sleuth and Zipking is based on Google Dapper.(Trace tree, spans, Traceid, SpandId)
+
+|:-Design Pattern -:|:- Spring Boot -:|:- Spring Cloud -:|:- Kubernetes -:|:- Istio -:|
+|:-Service discovery ||:-Netflix Eureka and Spring Cloud LoadBalancer|:-Kubernetes kube-proxy and service resources||
    
