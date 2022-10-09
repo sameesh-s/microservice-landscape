@@ -1,3 +1,16 @@
+
+|Design Pattern | Spring Boot | Spring Cloud | Kubernetes |Istio |
+|---------------|-------------|--------------|------------|------|
+|Service discovery ||Netflix Eureka and Spring Cloud LoadBalancer|Kubernetes kube-proxy and service resources||
+|<b>Edge Server</b>||Spring Cloud and Spring Security OAuth| Kubernetes Ingress controller|Istio ingress gateway|
+|<b>Reactive microservices</b>|Project Reactor and Spring WebFlux||||
+|<b>Central configuration</b>||Spring Config Server|Kubernetes ConfigMaps and Secrets||
+|<b>Centralized log analysis</b>|||Elasticsearch, Fluentd and Kibana (Not part of Kubernetes, but can easily be deployed and configured together with Kubernetes||
+|<b>Distibuted tracing</b>||Resilience4j||Outlier detection|
+|<b>Control loop</b>|||Kubernetes controller managers||
+|<b>Centralized monitoring and alarms</b>||||Kiali, Grafana and Prometheus|
+
+
 Creation of full microservice landscape using spring ecosystem and shell scripts.
 
 Installation  
@@ -76,7 +89,4 @@ Spring Cloud comes with Spring Cloud Sleuth, which can mark requests and message
 Zipking is a distributed tracing system that Spring Cloud Sleuth can send tracing data to for storage and visualization.  
 The infrastructure for handling distributed tracing information in Spring Cloud Sleuth and Zipking is based on Google Dapper.(Trace tree, spans, Traceid, SpandId)
 
-|:-Design Pattern -:|:- Spring Boot -:|:- Spring Cloud -:|:- Kubernetes -:|:- Istio -:|
-|-------------------|-----------------|------------------|----------------|-----------|
-|:-Service discovery ||:-Netflix Eureka and Spring Cloud LoadBalancer|:-Kubernetes kube-proxy and service resources||
    
