@@ -1,12 +1,13 @@
 
 |Design Pattern | Spring Boot | Spring Cloud | Kubernetes |Istio |
 |---------------|-------------|--------------|------------|------|
-|Service discovery ||Netflix Eureka and Spring Cloud LoadBalancer|Kubernetes kube-proxy and service resources||
+|<b>Service discovery</b>||Netflix Eureka and Spring Cloud LoadBalancer|Kubernetes kube-proxy and service resources||
 |<b>Edge Server</b>||Spring Cloud and Spring Security OAuth| Kubernetes Ingress controller|Istio ingress gateway|
 |<b>Reactive microservices</b>|Project Reactor and Spring WebFlux||||
 |<b>Central configuration</b>||Spring Config Server|Kubernetes ConfigMaps and Secrets||
 |<b>Centralized log analysis</b>|||Elasticsearch, Fluentd and Kibana (Not part of Kubernetes, but can easily be deployed and configured together with Kubernetes||
-|<b>Distibuted tracing</b>||Resilience4j||Outlier detection|
+|<b>Distibuted tracing</b>||Spring Cloud Sleuth and Zipkin||Jaeger|
+|<b>Circuit breaker</b>||Resilience4j||Outlier detection|
 |<b>Control loop</b>|||Kubernetes controller managers||
 |<b>Centralized monitoring and alarms</b>||||Kiali, Grafana and Prometheus|
 
